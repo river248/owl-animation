@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./index.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="cover">
+        <div class="text">
+            I love u 3000 (^.^)
+        </div>
+        <div class="head">
+            <div class="eye">
+                <div class="in-eye"></div>
+            </div>
+            <div class="eye">
+                <div class="in-eye"></div>
+            </div>
+            <div class="mouth"></div>
+            <div class="mi-left"></div>
+            <div class="mi-right"></div>
+        </div>
+        <div class="body">
+            <div class="foot-left"></div>
+            <div class="foot-right"></div>
+            <div class="feathers-1">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+            <div class="feathers-2">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+            <div class="feathers-3">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+            <div class="tree"></div>
+        </div>
+        <button>Nói nghe này nè !</button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+            $(".text").animate({width: '250px', opacity: '1'});
+            });
+        });
+    </script>
+</body>
+</html>
