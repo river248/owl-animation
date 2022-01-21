@@ -261,6 +261,105 @@ button {
     animation: grow 1s ease-in-out infinite;
 }
 
+.container {
+    width: 55px;
+    height: 55px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.circle-eye-container {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: relative;
+    animation: around 2s linear infinite forwards;
+}
+
+.circle-eye-container::after {
+    content: "";
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px dashed black;
+}
+
+.circle-eye {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.circle-eye::after {
+    content: "";
+    width: 12.5px;
+    height: 12.5px;
+    position: absolute;
+    border-radius: 50%;
+    border-top: 2.5px solid black;
+}
+
+.circle-eye-top {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.circle-eye-left {
+    top: 75%;
+    left: 5%;
+    transform: translateY(-75%);
+}
+
+.circle-eye-right {
+    top: 75%;
+    right: 5%;
+    transform: translateY(-75%);
+}
+
+.circle-eye-mid {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle-eye-top::after {
+    bottom: -3px;
+    right: 1.5px;
+    transform: rotate(98deg);
+}
+
+.circle-eye-left::after {
+    top: -3px;
+    left: 1px;
+    transform: rotate(-67deg);
+}
+
+.circle-eye-right::after {
+    top: -3.5px;
+    left: 1px;
+    transform: rotate(268deg);
+}
+
+.circle-eye-mid::after {
+    display: none;
+}
+
+@keyframes around {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}
+
 @keyframes closeeyes {
     0% {height: 35px;}
     15% {height: 0;}
