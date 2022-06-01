@@ -55,6 +55,7 @@
             </div>
             <div class="tree"></div>
         </div>
+        <div class="heart"></div>
         <button>Nói nghe này nè !</button>
     </div>
 
@@ -63,6 +64,7 @@
         $(document).ready(function(){
             $("button").click(function(){
             $(".text").animate({width: '310px', opacity: '1'});
+            $(".heart").addClass("move");
             });
         });
     </script>
