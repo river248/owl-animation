@@ -1,14 +1,22 @@
 
 
 body {margin: 0; padding: 0;}
-.cover {
+.wrapper {
     height: 100vh;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     background-color: #282828;
-    position: relative;
+}
+
+.cover {
     padding-top: 100px;
+    height: 500px;
+    width: 375px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
 }
 
 .text {
@@ -362,8 +370,8 @@ button {
     transform: rotate(45deg);
     position: absolute;
     z-index: 0;
-    top: 28%;
-    left: 50%;
+    top: 39%;
+    left: 48%;
 }
 
 .heart::before, .heart::after {
